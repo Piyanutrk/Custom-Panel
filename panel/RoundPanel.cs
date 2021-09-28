@@ -53,7 +53,12 @@ namespace panel
                     break;
             }
         }
-
+        
+        protected override void OnResize(EventArgs eventargs)
+        {
+            this.ResizeRedraw = true;
+            base.OnResize(eventargs);
+        }
 
         public float FillLineWidth
         {
